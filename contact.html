@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>WEBUILD -  Construction Company Website Template Free</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@500;700&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar Start -->
+    <div class="container-fluid sticky-top bg-light bg-light-radial shadow-sm px-5 pe-lg-0">
+        <nav class="navbar navbar-expand-lg bg-light bg-light-radial navbar-light py-3 py-lg-0">
+            <a href="index.html" class="navbar-brand">
+                <img src="img/logo.png" alt="Logo CV. MAKMOER ABADI" style="max-height: 80px; padding: 1px; border-radius: 2px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About</a>
+                    <a href="service.html" class="nav-item nav-link">Service</a>
+                    <a href="project.html" class="nav-item nav-link">Our Project</a>
+                    <a href="testimonial.html" class="nav-item nav-link">Testimonial</a>
+                    <a href="contact.html" class="nav-item nav-link active">Contact</a>
+                    <div class="nav-item dropdown ms-lg-3">
+                        <a href="#" class="nav-link dropdown-toggle bg-primary text-white px-2 px-lg-5 mt-2 mt-lg-0 d-flex align-items-center justify-content-start justify-content-lg-center" data-bs-toggle="dropdown" style="display: flex; align-items: center; height: 100%;">
+                            <i class="bi bi-globe me-2"></i> <span id="active-lang">ID</span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end m-0">
+                            <!-- Fungsi onclick akan memicu JavaScript di bawah -->
+                            <a href="javascript:void(0);" class="dropdown-item" onclick="restoreOriginal('ID')">ID - Indonesia</a>
+                            <a href="javascript:void(0);" class="dropdown-item" onclick="translateToEnglish('EN')">EN - English</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Contact Start -->
+    <div class="container-fluid py-6 px-5">
+        <div class="text-center mx-auto mb-5" style="max-width: 600px;">
+            <h1 class="display-5 text-uppercase mb-4">Hubungi <span class="text-primary">Kami</span></h1>
+            <p>Silakan hubungi kami untuk mendiskusikan kebutuhan proyek Anda. Kami siap memberikan solusi terbaik dengan harga yang bersaing.</p>
+        </div>
+        
+        <!-- Frame Utama Pembungkus Peta & Kontak (ditambahkan padding p-4) -->
+        <div class="bg-white shadow rounded p-3 p-lg-4">
+            
+            <!-- Ditambahkan g-4 (gap) untuk memberikan jarak / batas tengah -->
+            <div class="row g-4">
+                
+                <!-- Sisi Kiri: Peta -->
+                <div class="col-lg-6" style="min-height: 450px;">
+                    <!-- Iframe peta diberi border-radius (rounded) agar serasi -->
+                    <iframe class="w-100 h-100 rounded"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31540.53918741876!2d115.13716880664532!3d-8.826646930720772!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd25b3a734a0435%3A0x30f3a0e2a964fbfa!2sUngasan%2C%20Kec.%20Kuta%20Sel.%2C%20Kabupaten%20Badung%2C%20Bali!5e0!3m2!1sid!2sid!4v1785426698523!5m2!1sid!2sid"
+                        frameborder="0" style="border:0; min-height: 100%;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+                
+                <!-- Sisi Kanan: Informasi Kontak -->
+                <div class="col-lg-6">
+                    <!-- Kotak ditekankan dengan rounded -->
+                    <div class="p-5 h-100 d-flex flex-column justify-content-center bg-light rounded">
+                        <h2 class="text-uppercase mb-4">Informasi Kontak</h2>
+                        
+                        <div class="d-flex mb-4">
+                            <i class="fa fa-map-marker-alt text-primary fa-2x me-3 mt-1"></i>
+                            <div>
+                                <h5 class="text-uppercase mb-1">Alamat Kantor</h5>
+                                <p class="mb-0">Perum. BKR I BLOK C NO.02<br>Ungasan - Bali</p>
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex mb-5">
+                            <i class="fa fa-phone-alt text-primary fa-2x me-3 mt-1"></i>
+                            <div>
+                                <h5 class="text-uppercase mb-1">Telepon / WhatsApp</h5>
+                                <p class="mb-0">082-235-356-270<br>(Bpk. Hendri Mathias)</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Tombol WhatsApp Otomatis -->
+                        <a href="https://wa.me/6282235356270?text=Halo%20CV.%20MAKMOER%20ABADI%2C%20saya%20tertarik%20untuk%20menggunakan%20jasa%20Sub%20Kontraktor%20Struktural%20%26%20Finishing.%20Bisa%20minta%20informasi%20lebih%20lanjut%3F" target="_blank" class="btn btn-primary w-100 py-3">
+                            <i class="fab fa-whatsapp me-2"></i>Hubungi via WhatsApp
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <!-- Frame Utama End -->
+        
+    </div>
+    <!-- Contact End -->
+
+    <!-- Footer Start -->
+    <div class="footer container-fluid position-relative bg-dark bg-light-radial text-white-50 py-6 px-5">
+        <div class="row g-5">
+            <div class="col-lg-6 pe-lg-5">
+                <a href="index.html" class="navbar-brand d-flex align-items-center">
+                    <img src="img/logo.png" class="me-2 me-lg-3" alt="Logo CV. Makmoer Abadi" style="max-height: 50px; max-height: lg-100px; border-radius: 2px;">
+                    <h1 class="text-white text-uppercase mb-4">CV. MAKMOER ABADI</h1>
+                </a>
+                <p>Mitra terpercaya dalam bidang Sub Kontraktor Struktural & Finishing, berkomitmen memberikan mutu terbaik, tepat waktu, dan tepat manfaat.</p>
+                <p><i class="fa fa-map-marker-alt me-2"></i>Perum. BKR I BLOK C NO.02 UNGASAN - BALI.</p>
+                <p><i class="fa fa-phone-alt me-2"></i>+62 82235356270</p>
+                <p><i class="fa fa-envelope me-2"></i>info@makmoerabadi.com</p>
+                <div class="d-flex justify-content-start mt-4">
+                    <a class="btn btn-lg btn-primary btn-lg-square rounded-0 me-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-lg btn-primary btn-lg-square rounded-0 me-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-lg btn-primary btn-lg-square rounded-0" href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-6 ps-lg-5">
+                <div class="row g-5">
+                    <div class="col-sm-6">
+                        <h4 class="text-white text-uppercase mb-4">Tautan Terkait</h4>
+                        <div class="d-flex flex-column justify-content-start">
+                            <a class="text-white-50 mb-2" href="index.html"><i class="fa fa-angle-right me-2"></i>Home</a>
+                            <a class="text-white-50 mb-2" href="about.html"><i class="fa fa-angle-right me-2"></i>About Us</a>
+                            <a class="text-white-50 mb-2" href="service.html"><i class="fa fa-angle-right me-2"></i>Services</a>
+                            <a class="text-white-50 mb-2" href="project.html"><i class="fa fa-angle-right me-2"></i>Our Project</a>
+                            <a class="text-white-50 mb-2" href="testimonial.html"><i class="fa fa-angle-right me-2"></i>Testimonial</a>
+                            <a class="text-white-50 mb-2" href="contact.html"><i class="fa fa-angle-right me-2"></i>Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-dark bg-light-radial text-white border-top border-primary px-0">
+        <div class="d-flex flex-column flex-md-row justify-content-between">
+            <div class="py-4 px-5 text-center">
+                <p class="mb-0">&copy; <a class="text-primary" >CV.MAKMOER ABADI</a>. All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+    <!-- Wadah Google Translate (Disembunyikan) -->
+    <div id="google_translate_element" style="display:none;"></div>
+
+    <script type="text/javascript">
+        // Inisialisasi Google Translate
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'id', 
+                // HANYA sediakan bahasa Inggris (en) sebagai target terjemahan
+                includedLanguages: 'en', 
+                autoDisplay: false
+            }, 'google_translate_element');
+        }
+
+        // Fungsi khusus untuk menerjemahkan ke Bahasa Inggris
+        function translateToEnglish(langText) {
+            document.getElementById('active-lang').innerText = langText;
+            
+            // Mencari elemen dropdown bawaan Google Translate dan mengubah nilainya ke 'en'
+            var selectField = document.querySelector(".goog-te-combo");
+            if(selectField) {
+                selectField.value = 'en';
+                selectField.dispatchEvent(new Event('change'));
+            }
+        }
+
+        // Fungsi khusus untuk kembali ke Bahasa Indonesia (HTML Asli)
+        function restoreOriginal(langText) {
+            document.getElementById('active-lang').innerText = langText;
+            
+            // Cara paling ampuh mereset Google Translate ke HTML asli 
+            // adalah dengan menghapus cookie 'googtrans'
+            document.cookie = "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+            document.cookie = "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=" + location.hostname + ";";
+            
+            // Memuat ulang halaman agar kembali bersih tanpa sisa script translate
+            window.location.reload();
+        }
+    </script>
+
+    <!-- Script eksternal Google Translate (Gunakan https agar tidak diblokir CORS) -->
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+
+</html>
