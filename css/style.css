@@ -51,6 +51,156 @@
     padding-left: 1rem;
     padding-right: 1rem;
 }
+/* ========== FIX MOBILE & TABLET TIDAK TERLALU RAMPING (LEBIH LEBAR KONTEN) ========== */
+/* Tahap 1: Tablet (≤ 991px) - antara desktop dan mobile, dikurangi 50% padding + grid */
+@media (max-width: 991.98px) {
+    .container-fluid.py-6.px-5,
+    .container-fluid.px-5 {
+        padding-left: 1.25rem !important;
+        padding-right: 1.25rem !important;
+    }
+    .container-fluid.sticky-top.px-5 {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+    .footer.container-fluid.position-relative.py-6.px-5 {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+    .row.g-5, .row.gy-5 {
+        --bs-gutter-y: 1.25rem !important;
+        --bs-gutter-x: 1rem !important;
+    }
+    .row.g-4, .row.gy-4 {
+        --bs-gutter-y: 1rem !important;
+        --bs-gutter-x: 0.8rem !important;
+    }
+    .carousel-item,
+    .carousel-item img {
+        min-height: 320px !important;
+        max-height: 440px !important;
+    }
+    .carousel-caption h1.display-2 {
+        font-size: 1.8rem !important;
+    }
+    .carousel-caption .btn {
+        padding: 0.6rem 1.1rem !important;
+        font-size: 0.85rem;
+    }
+}
+
+/* Tahap 2: Tablet kecil (≤ 767px) - lebih kecil lagi */
+@media (max-width: 767.98px) {
+    .container-fluid.py-6.px-5,
+    .container-fluid.px-5 {
+        padding-left: 0.9rem !important;
+        padding-right: 0.9rem !important;
+    }
+    .container-fluid.sticky-top.px-5 {
+        padding-left: 0.75rem !important;
+        padding-right: 0.75rem !important;
+    }
+    .footer.container-fluid.position-relative.py-6.px-5 {
+        padding-left: 0.75rem !important;
+        padding-right: 0.75rem !important;
+    }
+    .row.g-5, .row.gy-5 {
+        --bs-gutter-y: 1.1rem !important;
+        --bs-gutter-x: 0.85rem !important;
+    }
+    .row.g-4, .row.gy-4 {
+        --bs-gutter-y: 0.95rem !important;
+        --bs-gutter-x: 0.7rem !important;
+    }
+    .carousel-caption h1.display-2 {
+        font-size: 1.5rem !important;
+    }
+}
+
+/* Tahap 3: Mobile kecil (≤ 575px) - paling kecil, padding minimal agar tidak ramping */
+@media (max-width: 575.98px) {
+    .container-fluid.py-6.px-5,
+    .container-fluid.px-5 {
+        padding-left: 0.5rem !important;
+        padding-right: 0.5rem !important;
+    }
+    .py-6 {
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+    }
+    .pt-6 { padding-top: 2rem !important; }
+    .pb-6 { padding-bottom: 2rem !important; }
+    .row.g-5, .row.gy-5 {
+        --bs-gutter-y: 1rem !important;
+        --bs-gutter-x: 0.75rem !important;
+    }
+    .row.g-4, .row.gy-4 {
+        --bs-gutter-y: 0.9rem !important;
+        --bs-gutter-x: 0.6rem !important;
+    }
+    .row.gx-5 {
+        --bs-gutter-x: 0.75rem !important;
+    }
+    .container-fluid .text-center.mx-auto.mb-5 {
+        margin-bottom: 2rem !important;
+    }
+    .text-center.mx-auto.mb-5 h1 {
+        font-size: 1.6rem !important;
+        letter-spacing: 0.3px;
+    }
+    .container-fluid.sticky-top.px-5 {
+        padding-left: 0.5rem !important;
+        padding-right: 0.5rem !important;
+    }
+    .col-lg-7 {
+        padding-left: 0.25rem !important;
+        padding-right: 0.25rem !important;
+    }
+    .carousel-caption .p-3,
+    .carousel-caption {
+        padding-left: 0.5rem !important;
+        padding-right: 0.5rem !important;
+    }
+    .carousel-caption h4 {
+        font-size: 0.95rem !important;
+    }
+    .carousel-caption h1.display-2 {
+        font-size: 1.35rem !important;
+        margin-bottom: 0.75rem !important;
+    }
+    .carousel-caption .btn {
+        padding: 0.45rem 0.9rem !important;
+        font-size: 0.8rem;
+    }
+    .carousel-item,
+    .carousel-item img {
+        min-height: 280px !important;
+        max-height: 360px !important;
+    }
+    .service-item .px-4.pb-4 {
+        padding-left: 0.75rem !important;
+        padding-right: 0.75rem !important;
+    }
+    .service-item h4 { font-size: 1rem !important; }
+    .portfolio-item { margin-bottom: 2.25rem !important; }
+    .portfolio-title {
+        min-height: 80px !important;
+        bottom: -38px !important;
+        left: 10px !important;
+        right: 10px !important;
+        padding: 10px 12px !important;
+    }
+    .portfolio-title h4 { font-size: 0.9rem !important; }
+    .portfolio-btn { font-size: 60px !important; }
+    .footer.container-fluid.position-relative.py-6.px-5 {
+        padding-left: 0.5rem !important;
+        padding-right: 0.5rem !important;
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+    }
+    .footer .px-4.pb-4 { padding: 0 0.5rem; }
+}
+
 @media (min-width: 576px) {
     .container-fluid.py-6.px-5,
     .container-fluid.px-5 {
