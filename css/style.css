@@ -591,9 +591,74 @@ font font {
         z-index: 2000 !important;
         min-width: 180px;
     }
-    .navbar .dropdown-toggle.nav-link.bg-primary {
+}
+
+/* ========== FIX LANGUAGE TOGGLE (ID / EN) RESPONSIF ========== */
+/* Mobile & Tablet (<=991.98px): Tombol bahasa FULL WIDTH, CENTER, SEKONSISTEN DENGAN NAV LINK LAIN */
+@media (max-width: 991.98px) {
+    .navbar-light .navbar-nav .nav-link.lang-toggle,
+    .navbar-dark .navbar-nav .nav-link.lang-toggle {
+        display: flex !important;
+        width: 100% !important;
+        max-width: 220px;
+        margin: 0 auto !important;
+        justify-content: center !important;
+        align-items: center !important;
+        text-align: center !important;
+        padding: 12px 1rem !important;
+        font-size: 15px !important;
+        font-weight: 600 !important;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        border-radius: 8px;
+        background-color: var(--primary) !important;
+        color: #fff !important;
+    }
+    .navbar-light .navbar-nav .nav-link.lang-toggle:hover,
+    .navbar-light .navbar-nav .nav-link.lang-toggle.show,
+    .navbar-dark .navbar-nav .nav-link.lang-toggle:hover,
+    .navbar-dark .navbar-nav .nav-link.lang-toggle.show {
+        background-color: #0a58ca !important;
+        color: #fff !important;
+    }
+    .navbar .nav-item.dropdown:has(.lang-toggle) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    /* Dropdown menu bahasa di mobile: rata tengah toggle */
+    .navbar .dropdown-menu.lang-menu {
+        max-width: 220px;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
+/* Desktop (>=992px): Tombol bahasa RINGKAS, KOMPAK seperti semula */
+@media (min-width: 992px) {
+    .navbar-light .navbar-nav .nav-link.lang-toggle,
+    .navbar-dark .navbar-nav .nav-link.lang-toggle {
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        height: auto !important;
+        padding: 8px 18px !important;
+        font-size: 13px !important;
+        font-weight: 600 !important;
+        line-height: 1.6;
+        border-radius: 6px;
+        margin-left: 8px;
+        background-color: var(--primary) !important;
+        color: #fff !important;
         white-space: nowrap;
         cursor: pointer;
+    }
+    .navbar-light .navbar-nav .nav-link.lang-toggle:hover,
+    .navbar-light .navbar-nav .nav-link.lang-toggle.show,
+    .navbar-dark .navbar-nav .nav-link.lang-toggle:hover,
+    .navbar-dark .navbar-nav .nav-link.lang-toggle.show {
+        background-color: #0a58ca !important;
+        color: #fff !important;
     }
 }
 
